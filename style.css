@@ -120,7 +120,7 @@ main {
   height: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background: url(./assets/imgs/bitcoin.svg) center/cover no-repeat;
+  background: url('./assets/imgs/bitcoin.svg') center/cover no-repeat;
 }
 .main-exchange-container h2 {
   margin-bottom: 30px;
@@ -232,9 +232,6 @@ main {
 
 /*Product Detail Section*/
 .main-product-detail {
-  background-color: var(--warm-black);
-}
-.main-product-detail {
   position: relative;
   width: 100%;
   min-width: 320px;
@@ -242,6 +239,7 @@ main {
   padding: 20px 10px;
   background-color: var(--warm-black);
 }
+
 .product-detail--batata-logo {
   /*Toma al position padre, osea .main-product-detail*/
   position: absolute;
@@ -249,7 +247,7 @@ main {
   height: 25px;
   top: -10px;
   left: calc(50% - 16px);
-  background-image: url(./assets/icons/batata.svg);
+  background-image: url('./assets/icons/batata.svg');
 }
 .product-detail--title {
   width: 90%;
@@ -277,7 +275,7 @@ main {
   width: 90%;
   min-width: 288px;
   max-width: 400px;
-  height: 150px;
+  min-height: 150px;
   margin: 15px auto;
   padding: 15px;
   background-color: var(--black);
@@ -293,16 +291,16 @@ main {
   margin-bottom: 10px;
 }
 .clock {
-  background: url(./assets/icons/clock.svg) center/cover no-repeat;
+  background: url('./assets/icons/clock.svg') center/cover no-repeat;
 }
 .eye {
-  background: url(./assets/icons/eye.svg) center/cover no-repeat;
+  background: url('./assets/icons/eye.svg') center/cover no-repeat;
 }
 .dollar_sign {
-  background: url(./assets/icons/dollar_sign.svg) center/cover no-repeat;
+  background: url('./assets/icons/dollar_sign.svg') center/cover no-repeat;
 }
-.check_circle{
-  background: url(./assets/icons/check_circle.svg) center/cover no-repeat;
+.check_circle {
+  background: url('./assets/icons/check_circle.svg') center/cover no-repeat;
 }
 
 .product--card-title {
@@ -317,4 +315,20 @@ main {
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
+}
+
+/*Comodin section*/
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 320px;
+  height: 60vh;
+  background: url('./assets/imgs/bitgirl.png') center/cover no-repeat;
+}
+.bitcoin-img-container h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--white);
+  text-align: center;
 }
